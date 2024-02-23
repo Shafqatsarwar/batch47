@@ -10,7 +10,7 @@ export default function Home() {
 <div className="min h-screen mt-10">
       <Header/>
       <Hero/>
-      <Input/>
+      
       <Footer/>
       </div>
 
