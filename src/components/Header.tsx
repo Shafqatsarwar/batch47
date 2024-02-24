@@ -18,13 +18,13 @@ width={200}
 height={50}>
 </Image>
       </div>
-      <div className="flex gap-10 items-center ">
-        {APP_LINKS.map((link: { href: string | UrlObject; name: string | number | boolean | ReactElement<any, string | JSXElementConstructor<any>> | Iterable<ReactNode> | ReactPortal | PromiseLikeOfReactNode | null | undefined; }) => (
-          <Link href={link.href}>
-            <p className="font-semibold">{link.name}</p>
-          </Link>
-        ))}
-      </div>
+      <div className="flex gap-10 items-center">
+  {APP_LINKS.map((link, index) => (
+    <Link key={index} href={link.href}>
+      <p className="font-semibold">{link.name}</p>
+    </Link>
+  ))}
+</div>
       <div>
         <Input placeholder="Search Products" className="h-8" />
       </div>
